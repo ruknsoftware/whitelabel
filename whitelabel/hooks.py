@@ -64,7 +64,7 @@ after_migrate = ['whitelabel.api.whitelabel_patch']
 # ------------
 
 # before_install = "whitelabel.install.before_install"
-after_install = "whitelabel.install.set_app_name"
+after_install = "whitelabel.install.after_install"
 
 # Desk Notifications
 # ------------------
