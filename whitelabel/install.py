@@ -52,6 +52,14 @@ def update_login_page_with_attachment():
             fieldname="app_logo"
         )
 
+        create_attachment_and_assign(
+            file_path=file_path,
+            file_name=file_name,
+            doctype="Whitelabel Setting",
+            docname="Whitelabel Setting",
+            fieldname="application_logo"
+        )
+
         frappe.clear_cache()
         print("Updated login page and attached logo successfully.")
     except Exception as e:
